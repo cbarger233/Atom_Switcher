@@ -1,0 +1,21 @@
+This program takes a CONTCAR file and replaces either:
+	1) C-H bonds with Si-H bonds,
+	2) Si-H bonds with C-H bonds,
+	3) Si-C bonds with Si-Si bonds, or
+	4) Si-C bonds with C-C bonds.
+
+The new file is called POSCAR.
+
+Compile the program with make while in the Atom_Switcher directory.
+Run the program with ./hello while in the directory.
+
+
+
+Example program run (old):
+
+Would you like to replace bonded Carbon with Silicon (1), or bonded Silicon with Carbon (2)?
+1
+How many of the 12 bonded Carbons would you like to replace?
+11
+
+This example takes a model that has 12 Carbons bonded to hydrogen atoms and replaces the carbon wth silicon, forming at least one Si-Si bond and at least one Si-H bond in the process.

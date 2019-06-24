@@ -247,7 +247,7 @@ int main() {
 		}
 
 		for (unsigned i = 0; i < bonded.size(); i++) {
-			carbon.push_back(bonded[i]);
+			silicon.push_back(bonded[i]);
 		}
 
 		b = bonded.size();
@@ -277,7 +277,7 @@ int main() {
 		}
 
 		for (unsigned i = 0; i < bonded.size(); i++) {
-			silicon.push_back(bonded[i]);
+			carbon.push_back(bonded[i]);
 		}
 
 		b = bonded.size();

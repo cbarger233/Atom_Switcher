@@ -144,6 +144,7 @@ int main() {
 	//figuring out all of the silicon and carbon atoms that are bonded to each other
 	for (unsigned i = 0; i < silicon.size(); i++) {
 		for (unsigned j = 0; j < carbon.size(); j++) {
+			distance = find_distance(silicon[i], carbon[j]);
 			if (distance <= SiC) {
 				silicon[i].c_bonded = true;
 				carbon[j].si_bonded = true;
@@ -247,7 +248,7 @@ int main() {
 		}
 
 		for (unsigned i = 0; i < bonded.size(); i++) {
-			silicon.push_back(bonded[i]);
+			carbon.push_back(bonded[i]);
 		}
 
 		b = bonded.size();
@@ -277,7 +278,7 @@ int main() {
 		}
 
 		for (unsigned i = 0; i < bonded.size(); i++) {
-			carbon.push_back(bonded[i]);
+			silicon.push_back(bonded[i]);
 		}
 
 		b = bonded.size();
